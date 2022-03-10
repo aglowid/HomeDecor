@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmptyDataSetView" customModule="HomeDecor" customModuleProvider="target">
+            <connections>
+                <outlet property="lblDis" destination="s6K-IV-Ovn" id="aVb-bL-tdA"/>
+                <outlet property="lblTitle" destination="chU-sS-Ooi" id="Uqs-aT-KbP"/>
+                <outlet property="stackBG" destination="UCE-yS-gDB" id="J34-82-Grn"/>
+                <outlet property="viewBG" destination="LFp-4F-ySy" id="GGa-Q7-fJN"/>
+                <outlet property="viewEmptyData" destination="iN0-l3-epB" id="XVF-bW-HFD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="539"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LFp-4F-ySy">
+                    <rect key="frame" x="20" y="232.5" width="356" height="74"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="UCE-yS-gDB">
+                            <rect key="frame" x="10" y="10" width="336" height="54"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tQr-WY-hh8">
+                                    <rect key="frame" x="0.0" y="0.0" width="336" height="54"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chU-sS-Ooi">
+                                            <rect key="frame" x="0.0" y="0.0" width="336" height="25.5"/>
+                                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="18"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6K-IV-Ovn">
+                                            <rect key="frame" x="0.0" y="35.5" width="336" height="18.5"/>
+                                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="13"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="UCE-yS-gDB" firstAttribute="leading" secondItem="LFp-4F-ySy" secondAttribute="leading" constant="10" id="7te-Th-hlP"/>
+                        <constraint firstItem="UCE-yS-gDB" firstAttribute="top" secondItem="LFp-4F-ySy" secondAttribute="top" constant="10" id="eoD-PB-Rhb"/>
+                        <constraint firstAttribute="bottom" secondItem="UCE-yS-gDB" secondAttribute="bottom" constant="10" id="lJl-eL-9tW"/>
+                        <constraint firstAttribute="trailing" secondItem="UCE-yS-gDB" secondAttribute="trailing" constant="10" id="sua-QM-utN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LFp-4F-ySy" secondAttribute="trailing" constant="20" id="BHi-Ui-2zf"/>
+                <constraint firstItem="LFp-4F-ySy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Edo-zK-BAG"/>
+                <constraint firstItem="LFp-4F-ySy" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Kqj-SI-P6P"/>
+                <constraint firstItem="LFp-4F-ySy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gWO-4C-gck"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="118.84057971014494" y="-39.84375"/>
+        </view>
+    </objects>
+</document>
